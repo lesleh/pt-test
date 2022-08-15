@@ -16,6 +16,10 @@ const Home: NextPage = () => {
         strategy="worker"
         src={`https://www.googletagmanager.com/gtag/js?id=${TRACKING_ID}`}
       />
+      <Script
+        strategy="worker"
+        src="https://embed.simplybusiness.com/sip/loader.js"
+      />
       <script
         type="text/partytown"
         dangerouslySetInnerHTML={{
@@ -35,6 +39,7 @@ const Home: NextPage = () => {
         This page exists to measure the performance benefits of using PartyTown
         in production.
       </p>
+      <div id="sb-sip-app" data-amount="3000"></div>
     </div>
   );
 };
