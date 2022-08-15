@@ -25,7 +25,9 @@ const Home: NextPage = () => {
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
             
-              gtag('config', '${TRACKING_ID}');`,
+              gtag('config', '${TRACKING_ID}', {
+                cookie_flags: 'max-age=7200;secure;samesite=none'
+              });`,
         }}
       />
       <h1>PartyTown test</h1>
