@@ -35,6 +35,11 @@ const Home: NextPage = () => {
         This page exists to measure the performance benefits of using PartyTown
         in production.
       </p>
+      <div id="sb-sip-app" data-amount="3000"></div>
+      <script
+        defer
+        src="https://embed.simplybusiness.com/sip/loader.js"
+      ></script>
     </div>
   );
 };
